@@ -41,6 +41,11 @@ main {
 h1, h2 {
   color: #4d2c2c;
   text-align: center;
+  font-size: 2rem; /* Set a consistent size for headers */
+}
+
+h1 {
+  font-size: 2.5rem; /* Slightly larger font size for h1 */
 }
 
 section {
