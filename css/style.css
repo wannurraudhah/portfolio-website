@@ -1,0 +1,162 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #fffaf7; /* extra light beige */
+  color: #3a2c2c;
+}
+
+header {
+  background-color: #fceaea; /* lightest pink */
+  padding: 1rem 0;
+  text-align: center;
+  border-bottom: 1px solid #f0dada;
+}
+
+.nav-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-menu li a {
+  color: #e9a8a8; /* soft pink */
+  text-decoration: underline; /* underline added */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+  color: #8f3838; /* darker pink (new hover color) */
+}
+
+main {
+  padding: 2rem;
+}
+
+h1, h2 {
+  color: #4d2c2c;
+  text-align: center;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+.about-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.profile-img {
+  max-width: 180px;
+  border-radius: 50%;
+  border: 3px solid #fbd9d6;
+}
+
+.bio p {
+  margin: 6px 0;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.project {
+  background-color: #fff3f6; /* softest pink background */
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: background-color 0.3s ease;
+}
+
+.project:hover {
+  background-color: #fbe3e8; /* slightly darker pink */
+}
+
+.project a {
+  color: #e9a8a8; /* link default - soft pink */
+  text-decoration: underline; /* underline added */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.project a:hover {
+  color: #8f3838; /* link hover - darker pink */
+}
+
+footer {
+  background-color: #fceaea;
+  color: #4d2c2c;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: 0.9rem;
+  border-top: 1px solid #f0dada;
+}
+
+footer a {
+  color: #e9a8a8;
+  text-decoration: underline; /* underline added */
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #8f3838; /* footer link hover - new color */
+}
+
+/* Default state for LinkedIn link (same as other links) */
+.linkedin-link {
+  color: #e9a8a8; /* Soft pink (default color) */
+  text-decoration: underline; /* Underline */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Hover state for LinkedIn link (same as other links) */
+.linkedin-link:hover {
+  color: #8f3838; /* Darker pink on hover */
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #e9a8a8;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+.scroll-top:hover {
+  background: #8f3838; /* scroll-top button hover - new color */
+}
+
+@media (max-width: 600px) {
+  .about-grid {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+}
