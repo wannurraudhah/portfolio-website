@@ -4,7 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wan Nur Raudhah's Portfolio</title>
+
+  <!-- GitHub Avatar as Favicon -->
   <link rel="icon" href="https://avatars.githubusercontent.com/u/152466829?s=32&v=4" type="image/png">
+
+  <!-- Content Security Policy -->
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https://avatars.githubusercontent.com; script-src 'self'; style-src 'self' 'unsafe-inline';">
 
   <meta name="description" content="Portfolio of Wan Nur Raudhah, a Bioinformatics student at UTM.">
@@ -31,7 +35,8 @@
     <section id="about">
       <h2>About Me</h2>
       <div class="about-grid">
-        <img src="https://avatars.githubusercontent.com/u/152466829?s=400&u=269b03f31902c87e2fd3909ef6de0fc7c3432c34&v=4" alt="Wan Nur Raudhah profile image" class="profile-img">
+        <!-- GitHub Avatar as Profile Image -->
+        <img src="https://avatars.githubusercontent.com/u/152466829?s=400&v=4" alt="Wan Nur Raudhah profile image" class="profile-img">
         <div class="bio">
           <p><strong>Name:</strong> Wan Nur Raudhah binti Maszamanie</p>
           <p><strong>Matric No:</strong> A23CS0195</p>
@@ -85,15 +90,7 @@
 
   <button class="scroll-top" id="scrollTop">↑</button>
 
-  <script>
-    // Scroll-to-top button logic
-    const scrollBtn = document.getElementById('scrollTop');
-    window.addEventListener('scroll', () => {
-      scrollBtn.style.display = window.scrollY > 200 ? 'flex' : 'none';
-    });
-    scrollBtn.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-  </script>
+  <!-- External JS File -->
+  <script src="js/script.js"></script>
 </body>
 </html>
